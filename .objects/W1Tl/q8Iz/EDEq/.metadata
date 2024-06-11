@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Інтернет-магазин ROZETKA™ офіційний са",
+  "Type": "Screen",
+  "Id": "EDEqz4qqeECsjP7asSYc7A",
+  "Reference": "4iYQPM_Fgk63zps2J1Edlw/EDEqz4qqeECsjP7asSYc7A",
+  "ParentRef": "4iYQPM_Fgk63zps2J1Edlw/q8IztLcJjE2MmFl5hJiwAg",
+  "Created": "2024-06-11T12:03:17.0613614Z",
+  "Updated": "2024-06-11T12:03:17.0613614Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

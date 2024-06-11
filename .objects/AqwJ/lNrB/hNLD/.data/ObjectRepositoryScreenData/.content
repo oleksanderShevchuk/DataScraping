@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="LLJLq6dxjU2EreHa9qHG2w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-9, -9, 1938, 1060" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAZNJREFUWEfNl8tNw0AQhucUWqAHBG1QA0gUwJESgAK4QHqgApQA8pEKcohydAXBXNEyn3dtYWecLHlo+KUvsrLzsHfH413J1kxG8irnypNMpVDmSpXguqjHsMF2byrkWCYyVpZKyATbce27tRZypE91p3z1gueDLzGI9Sdx51P5MINuA7GyZ+NNztSpXAmyO6XWx2nKMqC43odI3lAOz0Rc8/1N+xDkMGuCYrEcDgG5OopFl1XtJ88SHu4lzK4lVFcRrvmPMctnBXJ1liK+57ZxYvQi4fFWwvelhHBhwxg22FoxeoxjcrrWhiZDwPcbO6kFthk3sYwdk9ZpG7TwVFaideBjxepA7rp/W4MJ1nXdtA+Bz8aaILcWRGEOJiguK0EO+FoxW8itP3NzMEGFW8FzwNeK2UJu/anMwQSvmRU8B3ytmC3kdr2BiXz+iyVwLkL319C9Ebm3YuT6MULun2PkuiFB7lsyxLS4bUobuW7LG8WidDqYNIo14XQ0+61YFw6H077oWrRO+jcfkXgk3/F4LvIDZLcF7XxZvscAAAAASUVORK5CYII=" Selector="&lt;html app='chrome.exe' title='Comfy – Інтернет магазин побутової техніки та електроніки. Мережа магазинів побутової техніки та електроніки в Києві, Україні | Comfy (Комфі)' /&gt;" Title="Comfy – Інтернет магазин побутової техніки та електроніки. Мережа магазинів побутової техніки та електроніки в Києві, Україні | Comfy (Комфі)" Url="https://comfy.ua/ua/">
+      <imageRef attrName="InformativeScreenshot" originalValue="dc179d28e812b035c25a98f35e361a4b.jpg" xmlns="">0AARqkRZ-EkGXBanscj2FEw</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

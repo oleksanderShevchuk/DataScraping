@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ComfySequence" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="850.4,1745.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ComfySequence" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="656,1290.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -104,19 +104,19 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ComfySequence" sap:VirtualizedContainerService.HintSize="608,1680.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ComfySequence" sap:VirtualizedContainerService.HintSize="512,1225.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Comfy – Інтернет магазин побутової техніки та електроніки. Мережа магазинів побу" sap:VirtualizedContainerService.HintSize="545.6,1592" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="d816731d-c444-4bd3-8caf-b122166119b2" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome Comfy – Інтернет магазин побутової тех" sap:VirtualizedContainerService.HintSize="449.6,1136.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="d816731d-c444-4bd3-8caf-b122166119b2" Timeout="5" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1352" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,896.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable">
                 <Variable.Default>
@@ -129,43 +129,12 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="d816731d-c444-4bd3-8caf-b122166119b2" Text="Смартфони Samsung" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="d816731d-c444-4bd3-8caf-b122166119b2" Text="Смартфони Samsung[k(Enter)]" Version="V3">
               <uix:NTypeInto.Target>
-                <uix:TargetAnchorable BrowserURL="https://comfy.ua/ua/" CVScreenId="3120034d-9f45-4bc4-b576-f75efb732b7d" CvElementArea="540, 213, 788, 53" CvType="InputBox" DesignTimeRectangle="544, 280, 735, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='q' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='q' tag='INPUT' type='' class='header-search-form__input' placeholder='Пошук товарів' aaname='' /&gt;" Guid="1f2542f1-b82a-4d50-b813-83571b03e34a" InformativeScreenshot="d806ef1414d25ffbd1b9e43a50a6dbe5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Comfy – Інтернет магазин побутової техніки та електроніки. Мережа магазинів побутової техніки та електроніки в Києві, Україні | Comfy (Комфі)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                <uix:TargetAnchorable BrowserURL="https://comfy.ua/ua/" CVScreenId="f37adf78-0d15-4b31-b2d1-b34aa4347248" ContentHash="-qC6O9mi3UO7w84ppV_93Q" CvTextArea="557, 294, 118, 20" CvTextArgument="Nowyk TOBapiB" CvType="Text" DesignTimeRectangle="544, 280, 735, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='q' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='q' tag='INPUT' type='' class='header-search-form__input' placeholder='Пошук товарів' aaname='' /&gt;" Guid="2b0ef260-2c71-4226-9ace-00e28b847a05" InformativeScreenshot="465b6aa9de6944af3c0699fbcea9635b.png" Reference="4iYQPM_Fgk63zps2J1Edlw/SvzCsQptzUuqHvD19jrXDw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Comfy – Інтернет магазин побутової техніки та електроніки. Мережа магазинів побутової техніки та електроніки в Києві, Україні | Comfy (Комфі)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
               </uix:NTypeInto.Target>
-              <uix:NTypeInto.VerifyOptions>
-                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                  <uix:VerifyExecutionTypeIntoOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionTypeIntoOptions.Retry>
-                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                </uix:VerifyExecutionTypeIntoOptions>
-              </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Знайти'" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d816731d-c444-4bd3-8caf-b122166119b2" Version="V3">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="https://comfy.ua/ua/" CVScreenId="8fc3b748-b352-43ed-a949-35063b0ac9f0" CvElementArea="1194, 277, 134, 53" CvTextArea="1206, 294, 62, 17" CvTextArgument="3Haiin" CvType="Button" DesignTimeRectangle="1194, 280, 132, 47" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='icon-comfy header-search-form__search-btn header-search-form__search-btn--active' aaname='Знайти' check:innerText='Знайти' /&gt;" Guid="a5646700-aecc-4e97-a0df-134f4f2cc358" InformativeScreenshot="4c5f51cf0425a4fada0ea4e2e7ddac95.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Comfy – Інтернет магазин побутової техніки та електроніки. Мережа магазинів побутової техніки та електроніки в Києві, Україні | Comfy (Комфі)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target CVScreenId="8fc3b748-b352-43ed-a949-35063b0ac9f0" CvElementArea="1194, 277, 134, 53" CvTextArea="1206, 294, 62, 17" CvTextArgument="3Haiin" CvType="Button" DesignTimeRectangle="1209, 291, 58, 25" ElementType="Text" FullSelectorArgument="&lt;webctrl class='header-search-form__search-btn-text' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='header-search-form__search-btn-text' tag='SPAN' type='' aaname='                 Знайти             ' check:innerText='Знайти' /&gt;" Guid="63182852-ac73-49ff-993e-7ecc1fcc7dc2" SearchSteps="FuzzySelector, CV" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
-              </uix:NClick.Target>
-              <uix:NClick.VerifyOptions>
-                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                  <uix:VerifyExecutionOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionOptions.Retry>
-                  <uix:VerifyExecutionOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionOptions.Timeout>
-                </uix:VerifyExecutionOptions>
-              </uix:NClick.VerifyOptions>
-            </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Смартфони'" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d816731d-c444-4bd3-8caf-b122166119b2" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Смартфони'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d816731d-c444-4bd3-8caf-b122166119b2" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://comfy.ua/ua/search/?q=%D0%A1%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD%D0%B8+Samsung" CVScreenId="c8718f5e-81ee-4173-9daa-95273b3da9eb" CvElementArea="101, 416, 167, 87" CvTextArea="174, 451, 81, 17" CvTextArgument="CMapTOOHM" CvType="Button" DesignTimeRectangle="116, 434, 139, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl class='categories-carousel__item-content-link' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl class='categories-carousel__item-content-link' tag='A' type='' aaname='                 Смартфони             ' check:innerText='Смартфони' /&gt;" Guid="c8068c05-b79c-4f60-ad6c-b36ca7ceeefa" InformativeScreenshot="ab9a17fa19248c1983192371ee717516.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Результати пошуку для: &amp;apos;Смартфони Samsung&amp;apos;' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -180,47 +149,31 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Title'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Url'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='New column 1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column css-selector='.products-list-item__actions-price-current' name='Column3' attr='fulltext' /&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="449.6,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="d816731d-c444-4bd3-8caf-b122166119b2" Version="V3">
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Title'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Title Url'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Price'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column css-selector='.products-list-item__actions-price-current' name='Column3' attr='fulltext' /&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" InteractionMode="Simulate" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="d816731d-c444-4bd3-8caf-b122166119b2" Version="V3">
               <uix:NExtractData.DataTable>
                 <InOutArgument x:TypeArguments="sd:DataTable">
                   <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">ExtractDataTable</CSharpReference>
                 </InOutArgument>
               </uix:NExtractData.DataTable>
               <uix:NExtractData.NextLink>
-                <uix:TargetAnchorable BrowserURL="https://comfy.ua/ua/search/cat__67/?q=%D0%A1%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD%D0%B8+Samsung&amp;p=3" CVScreenId="654ee499-c3c0-454e-8d6c-a078028a05e8" CvElementArea="1624, 815, 187, 93" CvTextArea="1662, 850, 86, 26" CvTextArgument="BnepeA" CvType="Button" DesignTimeRectangle="1626, 818, 185, 87" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='     Вперед → ' parentid='q-app' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='     Вперед → ' parentid='q-app' tag='SPAN' type='' class='pagination-item p-i p-i--meta p-i--disabled' check:innerText='Вперед →' /&gt;" Guid="996332f7-9828-4f7d-b398-dde103d651a9" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Результати пошуку для: &amp;apos;Смартфони Samsung&amp;apos;' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                <uix:TargetAnchorable BrowserURL="https://comfy.ua/ua/search/cat__67/?q=%D0%A1%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD%D0%B8+Samsung" CVScreenId="2b4a6d3b-dcf8-46bb-8ec8-bb5f2dbe7b9f" CvElementArea="1624, 708, 187, 91" CvTextArea="1661, 741, 87, 27" CvTextArgument="Bnepen" CvType="Button" DesignTimeRectangle="1617, 9778, 185, 87" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='     Вперед → ' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='     Вперед → ' tag='A' type='' class='pagination-item p-i p-i--meta' check:text='Вперед →' /&gt;" Guid="ecf987ad-f600-44f8-a14c-b14ddc15bd3b" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Результати пошуку для: &amp;apos;Смартфони+Samsung&amp;apos;' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
               </uix:NExtractData.NextLink>
               <uix:NExtractData.Target>
-                <uix:TargetAnchorable BrowserURL="https://comfy.ua/ua/search/cat__67/?q=%D0%A1%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD%D0%B8+Samsung&amp;p=3" DesignTimeRectangle="532, 489, 1280, 8958" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl class='products-catalog' parentid='q-app' tag='DIV' /&gt;" Guid="3d5be6f2-7071-4178-a7a7-c4e6095008c6" InformativeScreenshot="2f19f2b35686aacd6b50735709be9c06.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Результати пошуку для: &amp;apos;Смартфони Samsung&amp;apos;' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                <uix:TargetAnchorable BrowserURL="https://comfy.ua/ua/search/?q=%D0%A1%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD%D0%B8+Samsung" DesignTimeRectangle="532, 631, 1280, 9346" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl class='products-catalog' parentid='q-app' tag='DIV' /&gt;" Guid="dd65ca41-0e54-43e7-8d04-270dace88609" InformativeScreenshot="2f19f2b35686aacd6b50735709be9c06.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Результати пошуку для: &amp;apos;Смартфони Samsung&amp;apos;' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
               </uix:NExtractData.Target>
             </uix:NExtractData>
-            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="449.6,336.8" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
-              <ueab:ExcelProcessScopeX.Body>
-                <ActivityAction x:TypeArguments="ui:IExcelProcess">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="353.6,139.2" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="Excels\comfy.xlsx">
-                      <ui:WriteRange.DataTable>
-                        <InArgument x:TypeArguments="sd:DataTable">
-                          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">ExtractDataTable</CSharpValue>
-                        </InArgument>
-                      </ui:WriteRange.DataTable>
-                    </ui:WriteRange>
-                  </Sequence>
-                </ActivityAction>
-              </ueab:ExcelProcessScopeX.Body>
-            </ueab:ExcelProcessScopeX>
+            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="353.6,140.8" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Comfy" WorkbookPath="Excels\SamsungSmartphones.xlsx">
+              <ui:WriteRange.DataTable>
+                <InArgument x:TypeArguments="sd:DataTable">
+                  <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">ExtractDataTable</CSharpValue>
+                </InArgument>
+              </ui:WriteRange.DataTable>
+            </ui:WriteRange>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-9, -9, 1938, 1060" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAZNJREFUWEfNl8tNw0AQhucUWqAHBG1QA0gUwJESgAK4QHqgApQA8pEKcohydAXBXNEyn3dtYWecLHlo+KUvsrLzsHfH413J1kxG8irnypNMpVDmSpXguqjHsMF2byrkWCYyVpZKyATbce27tRZypE91p3z1gueDLzGI9Sdx51P5MINuA7GyZ+NNztSpXAmyO6XWx2nKMqC43odI3lAOz0Rc8/1N+xDkMGuCYrEcDgG5OopFl1XtJ88SHu4lzK4lVFcRrvmPMctnBXJ1liK+57ZxYvQi4fFWwvelhHBhwxg22FoxeoxjcrrWhiZDwPcbO6kFthk3sYwdk9ZpG7TwVFaideBjxepA7rp/W4MJ1nXdtA+Bz8aaILcWRGEOJiguK0EO+FoxW8itP3NzMEGFW8FzwNeK2UJu/anMwQSvmRU8B3ytmC3kdr2BiXz+iyVwLkL319C9Ebm3YuT6MULun2PkuiFB7lsyxLS4bUobuW7LG8WidDqYNIo14XQ0+61YFw6H077oWrRO+jcfkXgk3/F4LvIDZLcF7XxZvscAAAAASUVORK5CYII=" InformativeScreenshot="8223bb70f3c601011489ad4b5a490c9f.jpg" Selector="&lt;html app='chrome.exe' title='Comfy – Інтернет магазин побутової техніки та електроніки. Мережа магазинів побутової техніки та електроніки в Києві, Україні | Comfy (Комфі)' /&gt;" Title="Comfy – Інтернет магазин побутової техніки та електроніки. Мережа магазинів побутової техніки та електроніки в Києві, Україні | Comfy (Комфі)" Url="https://comfy.ua/ua/" />
+        <uix:TargetApp Area="-9, -9, 1938, 1060" BrowserType="Chrome" ContentHash="LLJLq6dxjU2EreHa9qHG2w" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAZNJREFUWEfNl8tNw0AQhucUWqAHBG1QA0gUwJESgAK4QHqgApQA8pEKcohydAXBXNEyn3dtYWecLHlo+KUvsrLzsHfH413J1kxG8irnypNMpVDmSpXguqjHsMF2byrkWCYyVpZKyATbce27tRZypE91p3z1gueDLzGI9Sdx51P5MINuA7GyZ+NNztSpXAmyO6XWx2nKMqC43odI3lAOz0Rc8/1N+xDkMGuCYrEcDgG5OopFl1XtJ88SHu4lzK4lVFcRrvmPMctnBXJ1liK+57ZxYvQi4fFWwvelhHBhwxg22FoxeoxjcrrWhiZDwPcbO6kFthk3sYwdk9ZpG7TwVFaideBjxepA7rp/W4MJ1nXdtA+Bz8aaILcWRGEOJiguK0EO+FoxW8itP3NzMEGFW8FzwNeK2UJu/anMwQSvmRU8B3ytmC3kdr2BiXz+iyVwLkL319C9Ebm3YuT6MULun2PkuiFB7lsyxLS4bUobuW7LG8WidDqYNIo14XQ0+61YFw6H077oWrRO+jcfkXgk3/F4LvIDZLcF7XxZvscAAAAASUVORK5CYII=" InformativeScreenshot="dc179d28e812b035c25a98f35e361a4b.jpg" Reference="4iYQPM_Fgk63zps2J1Edlw/hNLDo9p4ykuKOdwU0ASX_A" Selector="&lt;html app='chrome.exe' title='Comfy – Інтернет магазин побутової техніки та електроніки. Мережа магазинів побутової техніки та електроніки в Києві, Україні | Comfy (Комфі)' /&gt;" Title="Comfy – Інтернет магазин побутової техніки та електроніки. Мережа магазинів побутової техніки та електроніки в Києві, Україні | Comfy (Комфі)" Url="https://comfy.ua/ua/" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
   </Sequence>

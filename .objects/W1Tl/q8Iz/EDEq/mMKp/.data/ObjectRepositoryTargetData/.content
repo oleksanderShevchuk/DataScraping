@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LvviUOpdjEKXAqnAcQVxAQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://rozetka.com.ua/ua/mobile-phones/c80003/producer=samsung/#search_text=%D1%81%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD%D0%B8+samsung" CVScreenId="89b2b617-9c34-403d-a1fb-5456b05a36c6" CvTextArea="46, 389, 450, 48" CvType="AnyWordGroup" DesignTimeRectangle="49, 387, 1819, 52" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='catalog-heading ng-star-inserted' /&gt;" Guid="a7323464-495a-45e6-8a15-31787b120abe" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Телефони Samsung купити в Києві. Ціна на смартфони Samsung, відгуки, продаж | ROZETKA' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="6c81a9dfa8d5f1698b4ee04f18b08647.png" xmlns="">03s8J23JQhk-WbLkZKGyMSg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

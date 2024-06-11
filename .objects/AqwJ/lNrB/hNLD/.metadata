@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Comfy – Інтернет магазин побутової тех",
+  "Type": "Screen",
+  "Id": "hNLDo9p4ykuKOdwU0ASX_A",
+  "Reference": "4iYQPM_Fgk63zps2J1Edlw/hNLDo9p4ykuKOdwU0ASX_A",
+  "ParentRef": "4iYQPM_Fgk63zps2J1Edlw/lNrB5VuRmkunTTlvVy3GPg",
+  "Created": "2024-06-11T12:54:14.8538593Z",
+  "Updated": "2024-06-11T12:54:14.8538593Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

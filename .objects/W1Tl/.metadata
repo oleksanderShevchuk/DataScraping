@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Інтернет-магазин ROZETKA™ офіційний са",
+  "Type": "App",
+  "Id": "W1TlW3GXbEGWvy8WjyVoXg",
+  "Reference": "4iYQPM_Fgk63zps2J1Edlw/W1TlW3GXbEGWvy8WjyVoXg",
+  "Created": "2024-06-11T12:03:17.0073104Z",
+  "Updated": "2024-06-11T12:03:17.0073104Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

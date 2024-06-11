@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-qC6O9mi3UO7w84ppV_93Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://comfy.ua/ua/" CVScreenId="f37adf78-0d15-4b31-b2d1-b34aa4347248" CvTextArea="557, 294, 118, 20" CvTextArgument="Nowyk TOBapiB" CvType="Text" DesignTimeRectangle="544, 280, 735, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='q' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='q' tag='INPUT' type='' class='header-search-form__input' placeholder='Пошук товарів' aaname='' /&gt;" Guid="2b0ef260-2c71-4226-9ace-00e28b847a05" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Comfy – Інтернет магазин побутової техніки та електроніки. Мережа магазинів побутової техніки та електроніки в Києві, Україні | Comfy (Комфі)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="465b6aa9de6944af3c0699fbcea9635b.png" xmlns="">02PYAWG115keqWDpohzldQA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
