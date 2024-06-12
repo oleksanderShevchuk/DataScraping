@@ -1,7 +1,7 @@
 {
-  "name": "DataScraping",
+  "name": "SmartphonePriceComparison",
   "projectId": "98ff2dc3-4503-4572-a5a4-4a9c4dfa8d55",
-  "description": "Data Scraping",
+  "description": "SmartphonePriceComparison",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.23.3-preview]",
