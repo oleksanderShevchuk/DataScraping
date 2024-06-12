@@ -20,7 +20,7 @@ project.json
 .settings/
 output/
 Logs/
-.local/
+*.local/
 *.user/
 *.suo
 *.cache
