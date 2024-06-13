@@ -1,5 +1,234 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="DataComparisonProcess" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <Sequence DisplayName="Data Comparison Sequence">
-
- </Sequence>
+<Activity mc:Ignorable="sap sap2010" x:Class="DataComparisonProcess" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="730.4,2673.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="697.6,2608.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="ComfyDataTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="FoxtrotDataTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="RozetkaDataTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="ResultDataTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="UniqueDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="635.2,2520" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="601.6,2410.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="539.2,1183.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="Excels\\SamsungSmartphones.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="505.6,881.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ReadRangeX DisplayName="Read Comfy Range" sap:VirtualizedContainerService.HintSize="443.2,201.6" sap2010:WorkflowViewState.IdRef="ReadRangeX_3">
+                      <ueab:ReadRangeX.Range>
+                        <InArgument x:TypeArguments="ue:IReadRangeRef">
+                          <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">Excel.Sheet["Comfy"]</CSharpValue>
+                        </InArgument>
+                      </ueab:ReadRangeX.Range>
+                      <ueab:ReadRangeX.SaveTo>
+                        <OutArgument x:TypeArguments="sd:DataTable">
+                          <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">ComfyDataTable</CSharpReference>
+                        </OutArgument>
+                      </ueab:ReadRangeX.SaveTo>
+                    </ueab:ReadRangeX>
+                    <ueab:ReadRangeX DisplayName="Read Foxtrot Range" sap:VirtualizedContainerService.HintSize="443.2,201.6" sap2010:WorkflowViewState.IdRef="ReadRangeX_2">
+                      <ueab:ReadRangeX.Range>
+                        <InArgument x:TypeArguments="ue:IReadRangeRef">
+                          <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">Excel.Sheet["Foxtrot"]</CSharpValue>
+                        </InArgument>
+                      </ueab:ReadRangeX.Range>
+                      <ueab:ReadRangeX.SaveTo>
+                        <OutArgument x:TypeArguments="sd:DataTable">
+                          <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">FoxtrotDataTable</CSharpReference>
+                        </OutArgument>
+                      </ueab:ReadRangeX.SaveTo>
+                    </ueab:ReadRangeX>
+                    <ueab:ReadRangeX DisplayName="Read Rozetka Range" sap:VirtualizedContainerService.HintSize="443.2,201.6" sap2010:WorkflowViewState.IdRef="ReadRangeX_4">
+                      <ueab:ReadRangeX.Range>
+                        <InArgument x:TypeArguments="ue:IReadRangeRef">
+                          <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">Excel.Sheet["Rozetka"]</CSharpValue>
+                        </InArgument>
+                      </ueab:ReadRangeX.Range>
+                      <ueab:ReadRangeX.SaveTo>
+                        <OutArgument x:TypeArguments="sd:DataTable">
+                          <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">RozetkaDataTable</CSharpReference>
+                        </OutArgument>
+                      </ueab:ReadRangeX.SaveTo>
+                    </ueab:ReadRangeX>
+                    <ui:InvokeCode ContinueOnError="{x:Null}" Code="if (!ComfyDataTable.Columns.Contains(&quot;SKU&quot;))&#xD;&#xA;{&#xD;&#xA;    ComfyDataTable.Columns.Add(&quot;SKU&quot;, typeof(string));&#xD;&#xA;}&#xD;&#xA;if (!FoxtrotDataTable.Columns.Contains(&quot;SKU&quot;))&#xD;&#xA;{&#xD;&#xA;    FoxtrotDataTable.Columns.Add(&quot;SKU&quot;, typeof(string));&#xD;&#xA;}&#xD;&#xA;if (!RozetkaDataTable.Columns.Contains(&quot;SKU&quot;))&#xD;&#xA;{&#xD;&#xA;    RozetkaDataTable.Columns.Add(&quot;SKU&quot;, typeof(string));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;foreach (DataRow row in ComfyDataTable.Rows)&#xD;&#xA;{&#xD;&#xA;    row[&quot;SKU&quot;] = ExtractSKU(row[&quot;Title&quot;].ToString());&#xD;&#xA;}&#xD;&#xA;foreach (DataRow row in FoxtrotDataTable.Rows)&#xD;&#xA;{&#xD;&#xA;    row[&quot;SKU&quot;] = ExtractSKU(row[&quot;Title&quot;].ToString());&#xD;&#xA;}&#xD;&#xA;foreach (DataRow row in RozetkaDataTable.Rows)&#xD;&#xA;{&#xD;&#xA;    row[&quot;SKU&quot;] = ExtractSKU(row[&quot;Title&quot;].ToString());&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;string ExtractSKU(string title)&#xD;&#xA;{&#xD;&#xA;&#x9;string tempRes = string.Empty;&#xD;&#xA;    var matches = System.Text.RegularExpressions.Regex.Matches(title, @&quot;SM-([^\s\)]+)&quot;);&#xD;&#xA;    foreach (System.Text.RegularExpressions.Match match in matches)&#xD;&#xA;    {&#xD;&#xA;        var sku = match.Groups[1].Value;&#xD;&#xA;        if (sku.Length &gt; 5)&#xD;&#xA;        {&#xD;&#xA;            return sku;&#xD;&#xA;        }&#xD;&#xA;&#x9;&#x9;else{&#xD;&#xA;&#x9;&#x9;&#x9;tempRes = sku;&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;    }&#xD;&#xA;    return tempRes;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA; var allData = ComfyDataTable.AsEnumerable()&#xD;&#xA;                                .Where(row =&gt; !string.IsNullOrEmpty(row.Field&lt;string&gt;(&quot;Price&quot;)) &amp;&amp; !string.IsNullOrEmpty(row.Field&lt;string&gt;(&quot;SKU&quot;)))&#xD;&#xA;                                .Union(FoxtrotDataTable.AsEnumerable()&#xD;&#xA;                                .Where(row =&gt; !string.IsNullOrEmpty(row.Field&lt;string&gt;(&quot;Price&quot;)) &amp;&amp; !string.IsNullOrEmpty(row.Field&lt;string&gt;(&quot;SKU&quot;))))&#xD;&#xA;                                .Union(RozetkaDataTable.AsEnumerable()&#xD;&#xA;                                .Where(row =&gt; !string.IsNullOrEmpty(row.Field&lt;string&gt;(&quot;Price&quot;)) &amp;&amp; !string.IsNullOrEmpty(row.Field&lt;string&gt;(&quot;SKU&quot;))));&#xD;&#xA;&#xD;&#xA;var result = new System.Data.DataTable();&#xD;&#xA;result.Columns.Add(&quot;Title&quot;, typeof(string));&#xD;&#xA;result.Columns.Add(&quot;MinPrice&quot;, typeof(double));&#xD;&#xA;result.Columns.Add(&quot;TitleUrl&quot;, typeof(string));&#xD;&#xA;result.Columns.Add(&quot;SKU&quot;, typeof(string));&#xD;&#xA;&#xD;&#xA;var uniqueModels = new System.Data.DataTable();&#xD;&#xA;uniqueModels.Columns.Add(&quot;Title&quot;, typeof(string));&#xD;&#xA;uniqueModels.Columns.Add(&quot;Price&quot;, typeof(double));&#xD;&#xA;uniqueModels.Columns.Add(&quot;TitleUrl&quot;, typeof(string));&#xD;&#xA;uniqueModels.Columns.Add(&quot;SKU&quot;, typeof(string));&#xD;&#xA;&#xD;&#xA;var groupedData = from row in allData&#xD;&#xA;                  group row by row.Field&lt;string&gt;(&quot;SKU&quot;) into modelGroup&#xD;&#xA;                  select new&#xD;&#xA;                  {&#xD;&#xA;                      Title = modelGroup.First().Field&lt;string&gt;(&quot;Title&quot;),&#xD;&#xA;                      MinPrice = modelGroup.Min(r =&gt; Convert.ToDouble(r.Field&lt;string&gt;(&quot;Price&quot;))),&#xD;&#xA;                      TitleUrl = modelGroup.First().Field&lt;string&gt;(&quot;TitleUrl&quot;),&#xD;&#xA;                      SKU = modelGroup.Key,&#xD;&#xA;                      Count = modelGroup.Count()&#xD;&#xA;                  };&#xD;&#xA;&#xD;&#xA;foreach (var item in groupedData)&#xD;&#xA;{&#xD;&#xA;    if (item.Count &gt; 1)&#xD;&#xA;    {&#xD;&#xA;        result.Rows.Add(item.Title, item.MinPrice, item.TitleUrl, item.SKU);&#xD;&#xA;     }&#xD;&#xA;    else&#xD;&#xA;    {&#xD;&#xA;        uniqueModels.Rows.Add(item.Title, item.MinPrice, item.TitleUrl, item.SKU);&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;ResultDataTable = result;&#xD;&#xA;UniqueDataTable = uniqueModels;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="443.2,188" sap2010:WorkflowViewState.IdRef="InvokeCode_1" Language="CSharp">
+                      <ui:InvokeCode.Arguments>
+                        <InArgument x:TypeArguments="sd:DataTable" x:Key="ComfyDataTable">
+                          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">ComfyDataTable</CSharpValue>
+                        </InArgument>
+                        <InArgument x:TypeArguments="sd:DataTable" x:Key="FoxtrotDataTable">
+                          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">FoxtrotDataTable</CSharpValue>
+                        </InArgument>
+                        <InArgument x:TypeArguments="sd:DataTable" x:Key="RozetkaDataTable">
+                          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">RozetkaDataTable</CSharpValue>
+                        </InArgument>
+                        <OutArgument x:TypeArguments="sd:DataTable" x:Key="ResultDataTable">
+                          <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">ResultDataTable</CSharpReference>
+                        </OutArgument>
+                        <OutArgument x:TypeArguments="sd:DataTable" x:Key="UniqueDataTable">
+                          <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">UniqueDataTable</CSharpReference>
+                        </OutArgument>
+                      </ui:InvokeCode.Arguments>
+                    </ui:InvokeCode>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="539.2,573.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" WorkbookPath="Excels\\Мінімальна вартість.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,272" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:WriteRangeX DisplayName="Write Min Prices" sap:VirtualizedContainerService.HintSize="433.6,183.2" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False">
+                      <ueab:WriteRangeX.Destination>
+                        <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                          <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">Excel.Sheet["Samsungs"]</CSharpValue>
+                        </InArgument>
+                      </ueab:WriteRangeX.Destination>
+                      <ueab:WriteRangeX.Source>
+                        <InArgument x:TypeArguments="sd:DataTable">
+                          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">ResultDataTable</CSharpValue>
+                        </InArgument>
+                      </ueab:WriteRangeX.Source>
+                    </ueab:WriteRangeX>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="539.2,564.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" ResizeWindow="None" WorkbookPath="Excels\\UniqueModels.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,272" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:WriteRangeX DisplayName="Write UniqueDataTable" sap:VirtualizedContainerService.HintSize="433.6,183.2" sap2010:WorkflowViewState.IdRef="WriteRangeX_4" IgnoreEmptySource="False">
+                      <ueab:WriteRangeX.Destination>
+                        <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                          <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">Excel.Sheet["Samsungs"]</CSharpValue>
+                        </InArgument>
+                      </ueab:WriteRangeX.Destination>
+                      <ueab:WriteRangeX.Source>
+                        <InArgument x:TypeArguments="sd:DataTable">
+                          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">UniqueDataTable</CSharpValue>
+                        </InArgument>
+                      </ueab:WriteRangeX.Source>
+                    </ueab:WriteRangeX>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
 </Activity>

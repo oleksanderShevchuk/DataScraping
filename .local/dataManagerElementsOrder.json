@@ -40,7 +40,29 @@
       "Path": "Sequences/RozetkaSequence.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "ExtractDataTable&Sequence_2"
+        "ExtractDataTable&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Processes/DataScrapingProcess.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Processes/DataComparisonProcess.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "UniqueDataTable&Sequence_4",
+        "ResultDataTable&Sequence_4",
+        "RozetkaDataTable&Sequence_4",
+        "FoxtrotDataTable&Sequence_4",
+        "ComfyDataTable&Sequence_4"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
